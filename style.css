@@ -80,6 +80,7 @@ html {
     rgb(128, 125, 125) 70%,
     var(--bg-color) 100%
   );
+  width: 100%;
 }
 .devinfo {
   display: flex;
