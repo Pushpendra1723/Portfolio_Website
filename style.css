@@ -256,3 +256,63 @@ html {
 .return .btn:hover {
   color: var(--text-color);
 }
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3vh;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .devpic {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .skill {
+    padding-top: 10vh;
+  }
+  .navbar-options {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main {
+    padding-top: 20vh;
+  }
+  .navbar-options ul {
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .navbar-options ul li {
+    text-align: center;
+    padding-top: 2vh;
+  }
+
+  .navbar-options ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-options.active {
+    display: flex;
+  }
+}
